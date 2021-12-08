@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.74be65f0.chunk.css",
+    "main.js": "/memory-card/static/js/main.cc0f5b39.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.cc0f5b39.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.06abf29f.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.06abf29f.js.map",
+    "static/js/2.44309008.chunk.js": "/memory-card/static/js/2.44309008.chunk.js",
+    "static/js/2.44309008.chunk.js.map": "/memory-card/static/js/2.44309008.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/main.74be65f0.chunk.css.map": "/memory-card/static/css/main.74be65f0.chunk.css.map",
+    "static/js/2.44309008.chunk.js.LICENSE.txt": "/memory-card/static/js/2.44309008.chunk.js.LICENSE.txt",
+    "static/media/button-11.dddb06af.wav": "/memory-card/static/media/button-11.dddb06af.wav",
+    "static/media/button-5.d45fea1e.wav": "/memory-card/static/media/button-5.d45fea1e.wav",
+    "static/media/index.css": "/memory-card/static/media/thimo.ca5070bf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06abf29f.js",
+    "static/js/2.44309008.chunk.js",
+    "static/css/main.74be65f0.chunk.css",
+    "static/js/main.cc0f5b39.chunk.js"
+  ]
+}
