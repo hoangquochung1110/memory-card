@@ -4,6 +4,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url('./assets/thimo.jpg');
-  background-size: cover;
+  object-fit: cover;
   color: white;
 }
