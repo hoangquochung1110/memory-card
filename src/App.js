@@ -3,8 +3,10 @@ import Header from './components/Header';
 import Main from './components/Main';
 import toonSound from './sounds/button-11.wav';
 import oopsSound from './sounds/button-5.wav';
+import "@fontsource/allerta-stencil";
 
 const CARDS_PER_LEVEL = 8;
+const POKEMON_CACHE = {};
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
@@ -35,13 +37,19 @@ function App() {
     const pokemons = [];
     const j = Math.round((Math.random() + .5) * 100);
     for (let i = 1; i <= quantity; i++) {
-      const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${i+j}`;
-      const response = await fetch(pokemonUrl)
-      const pokemon = await response.json()
-      const id = pokemon.id
-      const name = pokemon.name.toUpperCase();
-      const image = pokemon.sprites.front_default
-      pokemons.push({ id, name, image })
+      if (!POKEMON_CACHE[i+j]){
+        const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${i+j}`;
+        const response = await fetch(pokemonUrl, {cache: 'force-cache'})
+        const pokemon = await response.json()
+        const id = pokemon.id;
+        const name = pokemon.name.toUpperCase();
+        const image = pokemon.sprites.front_default;
+        POKEMON_CACHE[id] = {id, name, image};
+        console.log('fetching ', i);
+        //pokemons.push({ id, name, image })
+        
+      }
+      pokemons.push(POKEMON_CACHE[i+j]);
     }
     return pokemons
   }
