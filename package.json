@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://hoangquochung1110.github.io/memory-card/",
   "dependencies": {
+    "@fontsource/allerta-stencil": "^4.5.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
